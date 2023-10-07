@@ -32,7 +32,7 @@ public class Main {
 	        }
 	    }
 
-	    boolean printDebugInfo = true;
+	    boolean printDebugInfo = false;
 		Instance instance = new Instance();
 		InstanceReader instanceReader = new InstanceReader(instance, fileName, printDebugInfo);		
 		String pathlog = "logs/";
@@ -43,9 +43,9 @@ public class Main {
 		 * optional params:
 		 * 
 		 */
-		 int maxActivities = 6;
-		 int maxUnits = 15;
-		 int maxVehicles = 4;
+		 int maxActivities = 0;
+		 int maxUnits = 0;
+		 int maxVehicles = 0;
 
 		 
 		instanceReader.read(maxActivities,maxUnits,maxVehicles);
